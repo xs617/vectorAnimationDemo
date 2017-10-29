@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wen.animation.MainActivity">
+    <!--<ImageView-->
+    <!--android:id="@+id/tweenAnimationView"-->
+    <!--android:layout_width="40dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:background="@drawable/frame_animation"-->
+    <!--/>-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/animationView"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@mipmap/ic_launcher"-->
+    <!--app:layout_constraintTop_toBottomOf="@id/tweenAnimationView"-->
+    <!--/>-->
+    <CheckBox
+        android:id="@+id/left_right_dragon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/animated_sl_dragon_left_right"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/trim_dragon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dragon_anima_trim"
+        app:layout_constraintTop_toBottomOf="@id/left_right_dragon"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        />
+    <!--app:srcCompat="@drawable/dragon_anima_left_to_right"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/animationView" -->
+
+
+</android.support.constraint.ConstraintLayout>

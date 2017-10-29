@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/right"
+        android:state_checked="true"
+        android:drawable="@drawable/ic_dragon_right"
+        />
+    <item
+        android:id="@+id/left"
+        android:drawable="@drawable/ic_dragon_left"/>
+
+    <transition
+        android:fromId="@id/left"
+        android:toId="@id/right"
+        android:drawable="@drawable/dragon_anima_left_to_right"/>
+
+    <transition
+        android:fromId="@id/right"
+        android:toId="@id/left"
+        android:drawable="@drawable/dragon_anima_right_to_left"/>
+
+
+</animated-selector>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_dragon_left_trim">
+    <target
+        android:animation="@animator/dragon_left_trim"
+        android:name="dragon_left"
+        />
+</animated-vector>
